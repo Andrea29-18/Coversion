@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Divisas</title>
+    <link rel="stylesheet" href="css/divisas.css">
+    <script type="text/javascript" src="js/divisas.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="h1_titulo"></h1>
+    </header>
+
+    <div class="contenido">
+        <div class="contenedormonedas">
+            <img id="img1" class="imagen_moneda" src="/resource/mxn.png" alt="Moneda Origen">
+            <button class="botonswitch" title="Intercambiar" onclick="intercambiarTipoConversion()"></button>
+            <img id="img2" class="imagen_moneda" src="/resource/usa.png" alt="Moneda Destino">
+        </div>
+
+        <form onsubmit="convertir(event)">
+            <label for="txt_importe">Importe:</label>
+            <input class="entrada" type="number" id="txt_importe" placeholder="Introduce el importe" step="any" required>
+            <label for="txt_tasa">Tasa de cambio:</label>
+            <input class="resultado" type="text" id="txt_tasa" readonly>
+            <label for="txt_resultado">Resultado:</label>
+            <input class="resultado" type="text" id="txt_resultado" readonly>
+            <button type="submit" class="btn_convertir">Convertir</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Desarrollado por Estudiante de la Universidad Veracruzana</p>
+    </footer>
+</body>
+
+</html>
